@@ -10,6 +10,13 @@ const routes: Array<RouteRecordRaw> = [
         /* webpackChunkName: "lottomain" */ "@/components/lotto/LottoMain.vue"
       ),
   },
+  {
+    path: "/rsp",
+    name: "RspMain",
+    meta: { title: "가위바위보" },
+    component: () =>
+      import(/* webpackChunkName: "rspmain" */ "@/components/rsp/RspMain.vue"),
+  },
 ];
 
 const router = createRouter({

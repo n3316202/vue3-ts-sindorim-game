@@ -29,7 +29,7 @@
                 aria-current="page"
                 v-if="'meta' in route"
                 :to="route.path"
-                >{{ route.meta.title }}</router-link
+                >{{ route.meta?.title }}</router-link
               >
             </li>
             <li class="nav-item">
