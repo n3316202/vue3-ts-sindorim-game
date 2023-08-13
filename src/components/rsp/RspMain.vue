@@ -37,7 +37,7 @@
         </div>
         <div class="col-md-4 d-flex justify-content-center">
           <div class="card" style="width: 18rem">
-            <img :src="computer.img" class="card-img-top" alt="..." />
+            <img :src="computer.getImg()" class="card-img-top" alt="..." />
             <div class="card-body text-center">
               <h5 class="card-title">컴퓨터</h5>
               <button id="rsp-btn-computer" class="btn btn-primary m-2">
