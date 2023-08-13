@@ -17,6 +17,22 @@ const routes: Array<RouteRecordRaw> = [
     component: () =>
       import(/* webpackChunkName: "rspmain" */ "@/components/rsp/RspMain.vue"),
   },
+  {
+    path: "/job",
+    name: "JobMain",
+    meta: { title: "JobList" },
+    component: () =>
+      import(/* webpackChunkName: "jobmain" */ "@/components/job/JobMain.vue"),
+  },
+  {
+    path: "/board",
+    name: "BoardMain",
+    meta: { title: "게시판" },
+    component: () =>
+      import(
+        /* webpackChunkName: "boardmain" */ "@/components/board/BoardMain.vue"
+      ),
+  },
 ];
 
 const router = createRouter({
