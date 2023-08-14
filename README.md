@@ -1,24 +1,4 @@
-# vue3-ts-sindorim-game
 
-## Project setup
-```
-npm install
-```
+https://merrily-code.tistory.com/156
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Already included file name~ 에러가 출력된다면 tsconfig.json의 옵션 중 forceConsistentCasingInFileNames 가 true로 되어 있을 것입니다.
