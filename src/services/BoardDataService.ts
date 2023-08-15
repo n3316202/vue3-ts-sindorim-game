@@ -16,6 +16,10 @@ class BoardDataService {
     console.log(id)
     return http.delete(`/rboard/${id}`)
   }
+
+  write(data: Board) {
+    return http.post(`/rboard/`, data)
+  }
 }
 
 export default new BoardDataService()

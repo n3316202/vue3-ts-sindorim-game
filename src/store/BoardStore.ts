@@ -68,6 +68,19 @@ const useBoardStore = defineStore('boardState', {
         .catch((e) => {
           console.log(e)
         })
+    },
+    async writeBoard(board: Board) {
+      console.log('Wirte 보드' + board.btitle)
+      console.log('Wirte 보드' + board.bcontent)
+      console.log('Wirte 보드' + board.bname)
+
+      await BoardDataService.write(board)
+        .then((response) => {
+          console.log('Write 성공' + response.data)
+        })
+        .catch((e) => {
+          console.log('Write 실패' + e)
+        })
     }
   }
 })

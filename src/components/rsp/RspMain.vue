@@ -24,11 +24,7 @@
         </div>
         <div class="col-md-4 d-flex justify-content-center">
           <div class="card" style="width: 18rem">
-            <img
-              src="https://taegon.kim/wp-content/uploads/2018/05/image-5.png"
-              class="card-img-top"
-              alt="..."
-            />
+            <img src="https://taegon.kim/wp-content/uploads/2018/05/image-5.png" class="card-img-top" alt="..." />
             <div class="card-body text-center">
               <h5 class="card-title">심판</h5>
               <p>{{ computer.getResult(user) }}</p>
@@ -52,15 +48,15 @@
 </template>
 
 <script lang="ts" setup>
-import Player from "@/types/Player";
-import { onMounted, reactive } from "vue";
+import Player from '@/types/Player'
+import { onMounted, reactive } from 'vue'
 
-const computer: Player = reactive(new Player("computer"));
-const user: Player = reactive(new Player("user"));
+const computer: Player = reactive(new Player('computer'))
+const user: Player = reactive(new Player('user'))
 
 onMounted(() => {
-  console.log(computer);
-});
+  console.log(computer)
+})
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

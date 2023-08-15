@@ -5,15 +5,15 @@
 // }
 
 interface Board {
-  bcontent: string;
-  bdate: string;
-  bgroup: number;
-  bhit: number;
-  bid: number;
-  bindent: number;
-  bname: string;
-  bstep: number;
-  btitle: string;
+  bcontent?: string
+  bdate?: string
+  bgroup?: number
+  bhit?: number
+  bid?: number
+  bindent?: number
+  bname?: string
+  bstep?: number
+  btitle?: string
 }
 
-export default Board;
+export default Board
