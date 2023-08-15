@@ -56,6 +56,10 @@
               </ul>
             </nav>
           </div>
+          <hr />
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">글쓰기</button>
+          </div>
         </div>
       </div>
     </div>
